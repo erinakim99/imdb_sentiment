@@ -111,34 +111,8 @@ df['Word Tone'] = tone
 df['Rating'] = imdb['sentiment']
 
 # Create a SQLite database with engine
-#engine = create_engine('sqlite:///C:\\Erina\\SQL Practice\\imdb_database.db?charset=utf8', echo = False)
-#df.to_sql('imdb_database', con = engine, if_exists = 'replace', index = False)
+engine = create_engine('sqlite:///C:\\Erina\\SQL Practice\\imdb_database.db?charset=utf8', echo = False)
+df.to_sql('imdb_database', con = engine, if_exists = 'replace', index = False)
 
+# Convert a SQLite database to CSV file
 df.to_csv('imdb_analysis', index = False)
-
-# Connect to SQL Server
-'''cnxn_str = ("Driver = {ODBC Driver 17 for SQL Server};"
-            "Server = erinakim.database.windows.net;"
-            "Database = erinaDB;"
-            "Database_con = f'mssql://;"
-            "Trusted_Connection=False;"
-            "Encrypt=True;"
-            "Integrated Security=False;"
-            "UID=erinakim;"
-            "PWD=1Ksy8327@!#;")
-
-OR
-
-server = 'erinakim.database.windows.net' 
-database = 'erinaDB' 
-username = 'erinakim' 
-password = '1Ksy8327@!#'
-
-cnxn = pyodbc.connect("DRIVER={ODBC Driver 17 for SQL Server};
-                    SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+password';)
-cursor = cnxn.cursor()
-'''
-                      
-# Create the engine
-'''engine = create_engine(Database_IMDB)
-pd.read_sql('df', engine)'''
