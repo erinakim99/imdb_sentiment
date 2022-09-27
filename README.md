@@ -1,11 +1,11 @@
-# imdb_sentiment
+# IMDB 50K Review Sentiment Analysis
 Finding the linguistic features on IMDB Review sentiments
 
 ## Pre-analysis
 - Downloaded 50,000 IMDB Reviews with filtered sentiments
->kaggle datasets download -d lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+>kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 - Downloaded positive/negative adjective lists
-><script src="https://gist.github.com/mkulakowski2/4289437.js"></script>
+>gist.github.com/mkulakowski2/4289437.js
 
 ## Building a DataFrame
 - Tokenized each review with nltk library
