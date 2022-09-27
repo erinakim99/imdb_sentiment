@@ -22,13 +22,13 @@ df.to_sql('imdb_database', con = engine, if_exists = 'replace', index = False)`
 
 ## Analyzing with SQL
 - Compared 3 following factors for each sentiment (positive/negative)
-* Average Number of words
+1) Average Number of words\n
 `SELECT AVG("Number of Words") FROM imdb_database WHERE [Rating] = 'positive';
 SELECT AVG("Number of Words") FROM imdb_database WHERE [Rating] = 'negative';`
-* Average Number of First Personal Pronouns
+2) Average Number of First Personal Pronouns\n
 `SELECT AVG("Number of First Pronoun") FROM imdb_database WHERE [Rating] = 'positive';
 SELECT AVG("Number of First Pronoun") FROM imdb_database WHERE [Rating] = 'negative';`
-* Total Number of First Personal Pronouns
+3) Total Number of First Personal Pronouns\n
 `SELECT SUM("Number of First Pronoun") FROM imdb_database WHERE [Rating] = 'positive';
 SELECT SUM("Number of First Pronoun") FROM imdb_database WHERE [Rating] = 'negative';`
 
