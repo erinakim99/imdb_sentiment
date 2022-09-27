@@ -3,9 +3,9 @@ Finding the linguistic features on IMDB Review sentiments
 
 ## Pre-analysis
 - Downloaded 50,000 IMDB Reviews with filtered sentiments: kaggle datasets download -d lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
-- Downloaded positive/negative adjective lists
-<script src="https://gist.github.com/mkulakowski2/4289437.js"></script>,
-<script src="https://gist.github.com/mkulakowski2/4289441.js"></script>
+- Downloaded positive/negative adjective lists: 
+><script src="https://gist.github.com/mkulakowski2/4289437.js"></script>
+><script src="https://gist.github.com/mkulakowski2/4289441.js"></script>
 
 ## Building a DataFrame
 - Tokenized each review with nltk library
@@ -23,13 +23,13 @@ df.to_sql('imdb_database', con = engine, if_exists = 'replace', index = False)`
 
 ## Analyzing with SQL
 - Compared 3 following factors for each sentiment (positive/negative)
-# Average Number of words
+### Average Number of words
 `SELECT AVG("Number of Words") FROM imdb_database WHERE [Rating] = 'positive';
 SELECT AVG("Number of Words") FROM imdb_database WHERE [Rating] = 'negative';`
-# Average Number of First Personal Pronouns
+### Average Number of First Personal Pronouns
 `SELECT AVG("Number of First Pronoun") FROM imdb_database WHERE [Rating] = 'positive';
 SELECT AVG("Number of First Pronoun") FROM imdb_database WHERE [Rating] = 'negative';`
-# Total Number of First Personal Pronouns
+### Total Number of First Personal Pronouns
 `SELECT SUM("Number of First Pronoun") FROM imdb_database WHERE [Rating] = 'positive';
 SELECT SUM("Number of First Pronoun") FROM imdb_database WHERE [Rating] = 'negative';`
 
