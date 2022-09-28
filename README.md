@@ -20,19 +20,11 @@ Finding the linguistic features on IMDB Review sentiments
 
 `df['Number of Words'] = count_list`
 
-`for idx in token_list:`
-
-`    count_list.append(len(idx))`
-
 `pronoun = ['i','my', 'me', 'mine','myself']`
 
 `df['Number of First Pronoun'] = pronoun_match`
 
-`for token in idx:`
-
-`        if token.lower() in pronoun:`
-
-`            pronoun_count += 1`
+![image](https://user-images.githubusercontent.com/43493266/192658698-3e20a9ef-5b9f-4f54-9013-39d8b1e6edec.png)
 
 `pronoun_match.append(pronoun_count)`
 
