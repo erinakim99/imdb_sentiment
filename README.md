@@ -1,6 +1,7 @@
 # IMDB 50K Review Sentiment Analysis
 Finding the linguistic features on IMDB Review sentiments
 
+
 ## Pre-analysis
 **Downloaded 50,000 IMDB Reviews with filtered sentiments**
 >https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews<
@@ -38,6 +39,7 @@ Finding the linguistic features on IMDB Review sentiments
 - `engine = create_engine('sqlite:///C:\\Erina\\SQL Practice\\imdb_database.db?charset=utf8', echo = False)`
 
 - `df.to_sql('imdb_database', con = engine, if_exists = 'replace', index = False)`
+
 
 ## Analyzing with SQL
 **1. Compared 3 following factors for each sentiment (positive/negative)**
