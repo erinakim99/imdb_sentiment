@@ -25,7 +25,7 @@ Finding the linguistic features on IMDB Review sentiments
 `df['Number of First Pronoun'] = pronoun_match`
 
 ![image](https://user-images.githubusercontent.com/43493266/192659196-fc05f7c0-c486-4e0a-ae06-ab2baa64e63e.png)
-![image](https://user-images.githubusercontent.com/43493266/192659344-4ea15973-e910-4c06-9409-09c890e25e14.png)
+![image](https://user-images.githubusercontent.com/43493266/192659381-6d272d06-04bb-47ca-afcc-c94b4dba7866.png)
 
 - Analyzed the word tone using the positive / negative list
 
