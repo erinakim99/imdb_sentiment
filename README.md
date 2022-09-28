@@ -24,14 +24,15 @@ Finding the linguistic features on IMDB Review sentiments
 
 `df['Number of First Pronoun'] = pronoun_match`
 
-![image](https://user-images.githubusercontent.com/43493266/192658698-3e20a9ef-5b9f-4f54-9013-39d8b1e6edec.png)
+![image](https://user-images.githubusercontent.com/43493266/192658930-f1623ec7-60f1-4cbb-b1f3-adccf9ae16de.png)
 
+### Add the calculated value from each token to 3 criteria list
 `pronoun_match.append(pronoun_count)`
 
 - Analyzed the word tone using the positive / negative list
 
+![image](https://user-images.githubusercontent.com/43493266/192659006-4b687753-2757-41de-aa24-82964df3914b.png)
 ![image](https://user-images.githubusercontent.com/43493266/192658603-3385ee17-8ef5-428d-b051-218d34fdc1ed.png)
-
 
 - Converted the DataFrame to SQL DataBase after the analysis
 
