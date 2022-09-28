@@ -37,12 +37,9 @@ Finding the linguistic features on IMDB Review sentiments
 `pronoun_match.append(pronoun_count)`
 
 - Analyzed the word tone using the positive / negative list
-`if ps_count > ng_count:`
-`        tone.append("positive")`
-`    elif ps_count < ng_count:`
-`        tone.append("negative")`
-`    else:`
-`        tone.append("neutral")`
+
+![image](https://user-images.githubusercontent.com/43493266/192658603-3385ee17-8ef5-428d-b051-218d34fdc1ed.png)
+
 
 - Converted the DataFrame to SQL DataBase after the analysis
 
