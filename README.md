@@ -19,14 +19,21 @@ Finding the linguistic features on IMDB Review sentiments
 - Counted number of words & first pronouns and saved as df columns
 
 `df['Number of Words'] = count_list`
+
 `for idx in token_list:`
+
 `    count_list.append(len(idx))`
 
 `pronoun = ['i','my', 'me', 'mine','myself']`
+
 `df['Number of First Pronoun'] = pronoun_match`
+
 `for token in idx:`
+
 `        if token.lower() in pronoun:`
+
 `            pronoun_count += 1`
+
 `pronoun_match.append(pronoun_count)`
 
 - Analyzed the word tone using the positive / negative list
