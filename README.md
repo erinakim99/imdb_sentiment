@@ -5,7 +5,7 @@ Finding the linguistic features on IMDB Review sentiments
 - Downloaded 50,000 IMDB Reviews with filtered sentiments
 >https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 - Downloaded positive/negative adjective lists
->https://gist.github.com/mkulakowski2/4289437.js
+>https://gist.github.com/mkulakowski2/4289437
 
 ## Building a DataFrame
 - Tokenized each review with nltk library
@@ -18,12 +18,24 @@ Finding the linguistic features on IMDB Review sentiments
 
 - Counted number of words & first pronouns and saved as df columns
 
-`df['Number of Words'] = count_list
-df['Number of First Pronoun'] = pronoun_match`
-
-- Analyzed the word tone using the positive / negative list
+`df['Number of Words'] = count_list`
+`for idx in token_list:`
+`    count_list.append(len(idx))`
 
 `pronoun = ['i','my', 'me', 'mine','myself']`
+`df['Number of First Pronoun'] = pronoun_match`
+`for token in idx:`
+`        if token.lower() in pronoun:`
+`            pronoun_count += 1`
+`pronoun_match.append(pronoun_count)`
+
+- Analyzed the word tone using the positive / negative list
+`if ps_count > ng_count:`
+`        tone.append("positive")`
+`    elif ps_count < ng_count:`
+`        tone.append("negative")`
+`    else:`
+`        tone.append("neutral")`
 
 - Converted the DataFrame to SQL DataBase after the analysis
 
