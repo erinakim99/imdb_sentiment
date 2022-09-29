@@ -44,7 +44,7 @@ Finding the linguistic features on IMDB Review sentiments
 
 *Average Number of words*
 
-- `SELECT AVG("Number of Words") FROM imdb_database WHERE [Rating] = 'positive';`
+- `**SELECT** AVG("Number of Words") FROM imdb_database WHERE [Rating] = 'positive';`
 
 - `SELECT AVG("Number of Words") FROM imdb_database WHERE [Rating] = 'negative';`
 
