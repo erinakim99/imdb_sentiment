@@ -36,8 +36,6 @@ Finding the linguistic features on IMDB Review sentiments
 
 **5. Converted the DataFrame to SQL DataBase after the analysis**
 
-- `engine = create_engine('sqlite:///C:\\Erina\\SQL Practice\\imdb_database.db?charset=utf8', echo = False)`
-
 - `df.to_sql('imdb_database', con = engine, if_exists = 'replace', index = False)`
 
 
