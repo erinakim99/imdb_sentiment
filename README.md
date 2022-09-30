@@ -68,7 +68,7 @@ Finding the linguistic features on IMDB Review sentiments
 ## Visualizing with Power BI
 **1. Compared Average Number of Words for Positive / Negative Reviews**
 
->![image](https://user-images.githubusercontent.com/43493266/193164655-3b4b6817-c797-4d1e-8186-8ed5038bcc37.png)
+>![image](https://user-images.githubusercontent.com/43493266/193164695-cc78a3cd-edf3-4169-80df-fd39313be743.png)
 
 **2. Compared Total & Average Number of Words for Positive / Negative Reviews**
 
