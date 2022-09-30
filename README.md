@@ -4,7 +4,7 @@ Finding the linguistic features on IMDB Review sentiments
 
 ## Pre-analysis
 **Downloaded 50,000 IMDB Reviews with filtered sentiments**
->https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews<
+>https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
 
 **Downloaded positive/negative adjective lists**
 >https://gist.github.com/mkulakowski2/4289437<
